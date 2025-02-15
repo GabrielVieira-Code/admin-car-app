@@ -13,7 +13,7 @@ export interface Driver {
   
   export const getDrivers = async (): Promise<Driver[]> => {
     try {
-      const response = await fetch('http://localhost:3006/driver');
+      const response = await fetch(' http://localhost:3006/api/drivers');
   
       if (!response.ok) {
         throw new Error('Erro ao buscar motoristas');

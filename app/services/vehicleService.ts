@@ -32,7 +32,7 @@ export const createVehicle = async (vehicleData: VehicleData): Promise<{ id: num
   };
 
   try {
-    const response = await fetch('http://localhost:3006/data', {
+    const response = await fetch('http://localhost:3006/api/data', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ export const createVehicle = async (vehicleData: VehicleData): Promise<{ id: num
 // Função para buscar todos os veículos
 export const getVehicles = async (): Promise<Vehicle[]> => {
   try {
-    const response = await fetch('http://localhost:3006/data');
+    const response = await fetch('http://localhost:3006/api/data');
 
     if (!response.ok) {
       throw new Error('Erro ao buscar veículos');
