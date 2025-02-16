@@ -1,7 +1,7 @@
 export interface Driver {
     id: number;
     company_id: number;
-    city_id: number;
+    city: number;
     first_name: string;
     last_name: string;
     email: string;
