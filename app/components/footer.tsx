@@ -7,8 +7,6 @@ export default function Footer() {
     <footer className="bg-black text-white py-4">
       <div className="container mx-auto flex flex-col items-center">
         {/* Título e Texto */}
-        <h2 className="text-xl font-bold mb-2">Título do Footer</h2>
-        <p className="text-lg mb-4">Start Project</p>
         
         
         {/* Links dos ícones */}
